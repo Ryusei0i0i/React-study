@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import Hello from './components/Hello';
 import Message from './components/Message';
+import Page from './components/Context';
+import RUseState from './components/RUseState'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -11,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Message />
+    <RUseState initialValue={10}/>
   </React.StrictMode>
 );
 
